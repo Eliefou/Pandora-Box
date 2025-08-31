@@ -29,6 +29,7 @@
         <div class="landing-page">
             <hr class="Line">
             <h1 class="big-title"> <br> Pandora BOX </h1>
+            <div class="description"> *The place to say everything I couldn't tell you* <br></div>
             <hr class="Line">
         </div>
         
@@ -37,14 +38,13 @@
 <section class="OpenKey">
         <div class="KEY">
         <h2 class="Name"> <br> Put Your Name </h2>
-        <div class="Rules"> *Caps only on your first letter  <br>  
-        and press Submit to have <br> access to your challenge </div>
+        <div class="Rules"> *And press Submit to have <br> access to your challenge* </div>
         <br><span style="border:4px rgb(216, 25, 216) solid; padding:2px"><input type="text" id="question1" ></span> <br>
         <br><span style="border:4px green solid; padding:2px"><input type="text" id="question2" ></span> <br>
         <br><span style="border:4px blue solid; padding:2px"><input type="text" id="question3" ></span> <br>
-        <br> *No CAPS* <br>
+        <br> <div class="Rules"> *Caps only on first letter* </div> <br>
 
-        <button onclick="Solve()">Submit</button>
+        <br> <button onclick="Solve()">Submit</button>
 
     </div>
 
@@ -61,28 +61,30 @@ function Solve() {
         //window.location.href='Answer.html'
     } 
     
-    else if (value1 == "Juliette" && value2 == "calais" && value3 == "C2")
+    else if (value1 == "Juliette" && value2 == "Calais" && value3 == "Jaskier")
     {
         window.alert("Correct !");
+        //Lancer la 2nd page
+        window.location.href='Page/Juliette.html'
     }
     /*else if (value1 == "Rémi" && value2 == "admin" && value3 == "admin"){
         window.alert("Blue code is "+ alea);
     }
-    else if (value1 == "Juliette" && value2 == "calais" || value3 == "C2"){
+    else if (value1 == "Juliette" && value2 == "Calais" || value3 == "C2"){
         window.alert("Presque bon ! \n Green \n Blue");
     }        
         */
 
-    else if (value1 == "Juliette" && value2 == "calais"){
-        window.alert("Presque bon ! \nBlue");
+    else if (value1 == "Juliette" && value2 == "Calais"){
+        window.alert("Almost there ! \nBlue : To find the word you must ask me indirectly who my favourite Bard is \n(Remember, you can't ask me directly except if you find a way like a challenge or a way to lead me  to say the answer ) ");
     }
 
-    else if (value1 == "Juliette" && value3 == "C2"){
-        window.alert("Presque bon ! \nGreen ");
+    else if (value1 == "Juliette" && value3 == "Jaskier"){
+        window.alert("Almost there ! \nGreen : The city where I began to have feelings for you !");
     }
 
     else if (value1 == "Juliette" ) {
-        window.alert("Green : The city where I began to have feelings for you ! \nBlue :");
+        window.alert("Green : The city where I began to have feelings for you ! \nBlue : This will appear after submit and find the Green's solution");
         // Enigme 1 : peut être trouver seule, la ville ou j'ai commencer a avoir des sentiments pour toi !
         // Enigme 2 : Besoin de moi
         //Lancer la 2nd page
@@ -90,7 +92,7 @@ function Solve() {
     } 
     
     else {
-        window.alert("Try again");
+        window.alert("Try again or no Name for acces");
     }
 }
 /*

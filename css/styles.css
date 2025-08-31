@@ -16,6 +16,11 @@ body {
 }
 
 .body-backgrood {
+    background: url('../Picture/ChatGPT\ Image\ 31\ août\ 2025\,\ 22_03_41.png');
+    background-size: 100%;
+}
+
+.body-backgrood-open {
     background: url('../Picture/pngtree-unlocking-pandora-s-box-a-3d-rendering-with-beaming-rays-of-image_3682235.jpg');
     background-size: 100%;
 }
@@ -63,6 +68,12 @@ hr.Line{
     width :100%;
 }
 
+.description {
+    color: rgb(216, 25, 216);
+    font-size: clamp(25px, 5vw, 10px);
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: black;
+}
 
 
 h1 {
@@ -151,6 +162,21 @@ h2 {
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: black;
 }
+
+.Juliette-Text{
+    /* height: 100vh;  */
+    /* height: 40vh; */
+    /* flex: 1;  */
+    /* Prend tout l'espace restant entre header et footer */
+    background-color: gray;
+    padding-bottom: 2%;
+}
+
+.Text_content{
+    text-align: justify;
+    padding: 20px 100px 20px 100px;
+}
+
 
 
 @media (max-width: 600px) {
