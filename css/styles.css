@@ -1,0 +1,206 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    background: url('../Picture/maxresdefault.jpg');
+    background-size: cover;
+    /* height: 50vh; */
+    height: 100%;
+    width: 100%;
+    max-width: 750px;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.body-backgrood {
+    background: url('../Picture/pngtree-unlocking-pandora-s-box-a-3d-rendering-with-beaming-rays-of-image_3682235.jpg');
+    background-size: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header.header img {
+    width: 12%;
+}
+
+header.header {
+    display: flex;
+    flex-wrap: nowrap; /* ❗ Empêche les retours à la ligne */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+section.top-page {
+    background-size: cover;
+    /* height: 50vh; */
+    height: 45vh;
+    padding: 5% 5% 0 5%;
+    margin-bottom: 0%;
+    /* width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat; */
+}
+
+/* Page de bienvenue */
+.big-title {
+    font-weight: 1200;
+    color: rgb(216, 25, 216);
+    font-size: clamp(28px, 5vw, 50px);
+    text-align: center;
+}
+
+hr.Line{
+    border : none;
+    height: 4px;
+    background-color: rgb(216, 25, 216);
+    width :100%;
+}
+
+
+
+h1 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.landing-page {
+    display: flex;
+    flex-direction: column;   /* on empile les éléments */
+    align-items: center;      /* centre horizontalement */
+    justify-content: center;  /* centre verticalement */
+    gap: 10px;                /* espace entre les éléments (ajuste à ton goût) */
+    height: 100%;             /* prend toute la hauteur dispo */
+}
+
+
+p {
+  margin-top: 0;
+    margin-left: 2%;
+    margin-right: 2%;
+     color : black;
+}
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 80%;
+    background: rgb(188, 184, 184);
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+footer a.cgu {
+    text-decoration: none;
+    color: black;
+    margin-right: 2%;
+}
+
+footer p.copyright {
+    margin-left: 2%;
+}
+
+
+
+/* Liens */
+header.header a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: clamp(10px, 1vw, 12px);
+  white-space: nowrap; /* Empêche les mots d’aller à la ligne */
+}
+
+
+.OpenKey{
+    /* height: 100vh;  */
+    /* height: 40vh; */
+    /* flex: 1;  */
+    /* Prend tout l'espace restant entre header et footer */
+    background-color: gray;
+    padding-bottom: 2%;
+}
+
+.KEY{
+    text-align: center;
+}
+
+.Name{
+    text-align: center;
+    color : rgb(216, 25, 216);
+
+}
+
+.Rules{
+    text-align: center;
+    font-size: 80%;
+}
+
+h2 {
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+
+@media (max-width: 600px) {
+    header.header {
+        /* /flex-direction: column; */
+        flex-wrap: nowrap; /* ❗ Empêche les retours à la ligne */
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .big-title {
+        font-size: 28px;
+    }
+
+    nav.nav {
+        /* flex-direction: column; */
+        flex-wrap: nowrap;
+        /* width: 100%; */
+        align-items: center;
+        margin-left: 0;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .self-introduction,
+    .passion-introduction {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    section.top-page {
+        height: 32vh;
+        padding: 2%;
+    }
+    header.header a {
+        font-size: clamp(8px, 2vw, 8px);
+    }
+
+    .flag {
+        height: 20px;
+        /* width: auto; */
+    }
+}
+
+
+

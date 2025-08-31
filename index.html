@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">  
+
+
+<!--HeadPage-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
+    <meta name="description" content="Personal Things">
+    <meta name="robots" content="index, follow">
+    <title> Pandora Box </title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <script type="text/javascript" src="Java/script.js"></script> -->
+
+</head>
+
+
+
+<body>
+<div class="body-backgrood">
+    
+    <section class="top-page">
+        <header class="header">
+
+
+        </header>
+
+        <div class="landing-page">
+            <hr class="Line">
+            <h1 class="big-title"> <br> Pandora BOX </h1>
+            <hr class="Line">
+        </div>
+        
+    </section>
+
+<section class="OpenKey">
+        <div class="KEY">
+        <h2 class="Name"> <br> Put Your Name </h2>
+        <div class="Rules"> *Caps only on your first letter  <br>  
+        and press Submit to have <br> access to your challenge </div>
+        <br><span style="border:4px rgb(216, 25, 216) solid; padding:2px"><input type="text" id="question1" ></span> <br>
+        <br><span style="border:4px green solid; padding:2px"><input type="text" id="question2" ></span> <br>
+        <br><span style="border:4px blue solid; padding:2px"><input type="text" id="question3" ></span> <br>
+        <br> *No CAPS* <br>
+
+        <button onclick="Solve()">Submit</button>
+
+    </div>
+
+
+</section>
+
+<script>
+function Solve() {
+    var value1 = document.getElementById("question1").value;
+    var value2 = document.getElementById("question2").value;
+    var value3 = document.getElementById("question3").value;
+    if (value1 == "Rémi" && value2 == "admin" && value3 == "admin") {
+        window.alert("Admin !");
+        //window.location.href='Answer.html'
+    } 
+    
+    else if (value1 == "Juliette" && value2 == "calais" && value3 == "C2")
+    {
+        window.alert("Correct !");
+    }
+    /*else if (value1 == "Rémi" && value2 == "admin" && value3 == "admin"){
+        window.alert("Blue code is "+ alea);
+    }
+    else if (value1 == "Juliette" && value2 == "calais" || value3 == "C2"){
+        window.alert("Presque bon ! \n Green \n Blue");
+    }        
+        */
+
+    else if (value1 == "Juliette" && value2 == "calais"){
+        window.alert("Presque bon ! \nBlue");
+    }
+
+    else if (value1 == "Juliette" && value3 == "C2"){
+        window.alert("Presque bon ! \nGreen ");
+    }
+
+    else if (value1 == "Juliette" ) {
+        window.alert("Green : The city where I began to have feelings for you ! \nBlue :");
+        // Enigme 1 : peut être trouver seule, la ville ou j'ai commencer a avoir des sentiments pour toi !
+        // Enigme 2 : Besoin de moi
+        //Lancer la 2nd page
+        //window.location.href='Answer.html'
+    } 
+    
+    else {
+        window.alert("Try again");
+    }
+}
+/*
+function random(min, max){
+    return Math.floor(Math.random() * (max - min) + min)
+}
+var alea=random(0, 1000001);
+*/
+</script>
+
+
+
+
+<section class="ennding-page">
+    <footer>
+        <p class="copyright">&copy; 2025 - Pandora Box <br>Last Update 31/08/2025 </p>
+
+        
+        
+        <a href="" class="cgu"> Conditions Générales d'Utilisation</a>
+    </footer>
+
+</section>
+
+</div>
+
+<!--<script type="text/javascript" src="Java/script.js" defer></script>
+-->
+
+
+</body>
+
+</html>
